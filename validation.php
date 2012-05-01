@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Include twilio-php the offical Twilio PHP Helper Library, which can be found at
+ * Include twilio-php, the offical Twilio PHP Helper Library, which can be found at
  * http://www.twilio.com/docs/libraries
  */ 
 include 'Services/Twilio.php';
