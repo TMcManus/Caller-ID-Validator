@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Include the offical Twilio PHP Helper Library, which can be found at
+ * Include twilio-php the offical Twilio PHP Helper Library, which can be found at
  * http://www.twilio.com/docs/libraries
  */ 
 include 'Services/Twilio.php';
 
 // Your Twilio Credentials 
-$accountSid = 'AC123456789'; // Replace this with your own Account SID
-$authToken  = '12a46176d7d'; // Replace this with your own Auth Token
+$accountSid = 'ACXXXXXX'; // Replace this with your own Account SID
+$authToken  = 'YYYYYYYY'; // Replace this with your own Auth Token
 
 // Grab the phone number from the POST Request
 if(isset($_REQUEST['phone_number'])){
