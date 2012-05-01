@@ -1,7 +1,7 @@
-# Caller ID Validator #
+# Caller ID Validator
 This script is intended to simplify the process of verifying a client's caller ID for use in your Twilio application.
 
-### Learn more about how this works ###
+### Learn more about how this works
 This script uses:
 * The [OutgoingCallerIds](http://www.twilio.com/docs/api/rest/outgoing-caller-ids) resource from the [Twilio REST API](http://www.twilio.com/docs/api/rest)
 * The official [Twilio PHP Helper Library](http://www.twilio.com/docs/libraries)
