@@ -5,7 +5,7 @@ This script is intended to simplify the process of verifying a client's caller I
 A customer of yours wants to be able to use their current phone number as a caller ID when they use your Twilio application. You've tried 
 
 ## Installing
-1. Open `validation.php` and replace `ACXXXXXX` with your Account SID and `YYYYYYYY` with your Auth Token. Both your Account SID and your Auth Token can be found on your Twilio account's dashboard page.
+1. Open `validation.php`. Replace `ACXXXXXX` with your Account SID and `YYYYYYYY` with your Auth Token. Both your Account SID and your Auth Token can be found on your Twilio account's dashboard page.
 2. Upload `validation.php` and the `assets` folder to a publicly accessible web server.
 3. Download and unzip the latest version of [twilio-php](http://www.twilio.com/docs/libraries), the official PHP helper library for Twilio.
 4. Go to the directory which you just unzipped.
