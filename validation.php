@@ -32,8 +32,6 @@ if(isset($_REQUEST['phone_number'])){
 	}
 }
 
-$message = "Validation Code";
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +43,7 @@ $message = "Validation Code";
 	<div class="container-fluid">
 		<div class="span6" style="padding-top:20px;">
 			<img src="assets/Twilio-logo.png"/>
-			<?php echo("<h3>".$message."</h3>"); ?>
+			<?php echo($message); ?>
 			<ol>
 				<li>Please enter the phone number you would like to verify.</li>
 				<li>If you are at an extension, please enter that extension. Don't worry, the entire number will be verified, not just your extension.</li>
