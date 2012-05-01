@@ -7,8 +7,8 @@
 include 'Services/Twilio.php';
 
 // Your Twilio Credentials 
-$accountSid = 'AC3120f19ed4a34467aadd3fbea6c0006e';
-$authToken  = 'a0a6b8d057ab09bfc8ef66aaceb43a93';
+$accountSid = 'AC123456789'; // Replace this with your own Account SID
+$authToken  = '12a46176d7d'; // Replace this with your own Auth Token
 
 // Grab the phone number from the POST Request
 if(isset($_REQUEST['phone_number'])){
@@ -32,31 +32,43 @@ if(isset($_REQUEST['phone_number'])){
 	}
 }
 
+$message = "Validation Code";
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Caller ID Validation</title>
+	<title>Caller ID Validation</title>
+	<link href="assets/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-
-<?php
-if(isset($message)){
-	echo($message);
-}
-?>
-<ol>
-	<li>Please enter the phone number you would like to verify.</li>
-	<li>If you are at an extension, please enter that extension. Don't worry, the entire number will be verified, not just your extension.</li>
-	<li>When you press "Verify Phone" you will be given a PIN, and then receive a phone call that will ask for this PIN.</li>
-</ol>
-<form action="validation.php" method="post">
-Phone Number: <input type="text" name="phone_number" />
-Extension: <input type="text" name="extension" />
-<input type="submit" value="Call Phone" />
-
-</form>
-
+	<div class="container-fluid">
+		<div class="span6" style="padding-top:20px;">
+			<img src="assets/Twilio-logo.png"/>
+			<?php echo("<h3>".$message."</h3>"); ?>
+			<ol>
+				<li>Please enter the phone number you would like to verify.</li>
+				<li>If you are at an extension, please enter that extension. Don't worry, the entire number will be verified, not just your extension.</li>
+				<li>When you press "Verify Phone" you will be given a PIN, and then receive a phone call that will ask for this PIN.</li>
+			</ol>
+			<div class="control-group">
+				<form action="validation.php" method="post" class="form-horizontal">
+					<fieldset>
+						<div class="control-group">
+							<label for="phone_number" class="control">Phone Number: </label>
+							<input type="text" name="phone_number" id="phone_number" />
+						</div>
+						<div class="control-group">
+							<label for="extension" class="control">Extension: </label>
+							<input type="text" name="extension" id="extension" class="span1" />
+						</div>
+						<div class="form-actions">
+							<input type="submit" value="Call Phone" class="btn-large btn-primary" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
-
 </html>
