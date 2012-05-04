@@ -42,7 +42,7 @@ if(isset($_REQUEST['phone_number'])){
 <body>
 	<div class="container-fluid">
 		<div class="span6" style="padding-top:20px;">
-			<img src="assets/Twilio-logo.png"/>
+			<img src="assets/Twilio-Logo.png"/>
 			<?php echo($message); ?>
 			<ol>
 				<li>Please enter the phone number you would like to verify.</li>
